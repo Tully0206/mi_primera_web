@@ -1,0 +1,20 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url('hw.gif');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px;
+    color: #f5d280;
+    text-align: center; 
+}
+
+h1 {
+    color: #ed5fc0;
+}
+
+
+p {
+    font-size: 1.1em;
+}
