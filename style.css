@@ -1,20 +1,84 @@
+/* === ESTILOS GENERALES === */
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: url('hw.gif');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 10px;
-    color: #f5d280;
-    text-align: center; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f2f2f2;
+  color: #333;
 }
 
-h1 {
-    color: #ed5fc0;
+/* === HEADER === */
+header {
+  text-align: center;          /* centra h1 y p */
+  background: #e88be0;
+  color: white;
+  padding: 40px 20px 20px;     /* espacio extra arriba para el nav */
+  position: relative;
 }
 
+header h1 {
+  margin: 0;
+}
 
-p {
-    font-size: 1.1em;
+header p {
+  margin: 5px 0 0;
+}
+
+/* NAV arriba a la derecha */
+header nav {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;      /* Flexbox simple */
+  gap: 15px;          /* Espacio entre enlaces */
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* === MAIN === */
+main {
+  padding: 20px;
+}
+
+/* === TARJETAS === */
+.tarjetas {
+  display: flex;              /* Flexbox para organizar */
+  flex-wrap: wrap;            /* permite que bajen de fila */
+  justify-content: center;    /* centra el grupo */
+  gap: 15px;                  /* espacio entre tarjetas */
+  padding: 20px;
+}
+
+.tarjeta {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  width: 220px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tarjeta img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.tarjeta h3 {
+  margin: 5px 0;
+}
+
+/* === FOOTER === */
+footer {
+  background: #e88be0;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
