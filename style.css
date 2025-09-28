@@ -34,8 +34,9 @@ header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;      /* Flexbox simple */
-  gap: 15px;          /* Espacio entre enlaces */
+  display: flex;      /* activa el Flexbox para organizar los enlaces en fila */
+  gap: 15px;          /* espacio entre cada enlace */
+  justify-content: center; /* me centra los enlaces en horizontal */
 }
 
 header nav a {
@@ -50,12 +51,13 @@ main {
 
 /* === TARJETAS === */
 .tarjetas {
-  display: flex;              /* Flexbox para organizar */
-  flex-wrap: wrap;            /* permite que bajen de fila */
-  justify-content: center;    /* centra el grupo */
-  gap: 15px;                  /* espacio entre tarjetas */
+  display: flex;              /* Activa Flexbox en el contenedor de tarjetas */
+  flex-wrap: wrap;            /* Hace que las tarjetas bajen a la siguiente fila si no caben */
+  justify-content: center;    /* Centra todas las tarjetas en el medio */
+  gap: 15px;                  /* Deja espacio entre tarjetas */
   padding: 20px;
 }
+
 
 .tarjeta {
   background: white;
